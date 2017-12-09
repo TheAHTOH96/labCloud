@@ -17,7 +17,5 @@ public interface ProductsRepositories extends MongoRepository<Products, String> 
     Set<Products> findByAmountGreaterThanEqual(@Param("ProductByAmountGreaterThanEqual") BigInteger amount);
     Set<Products> findByPriceLessThanEqual(@Param("ProductByPriceLessThanEqual") BigInteger price);
     Set<Products> findByPriceGreaterThanEqual(@Param("ProductByPriceGreaterThanEqual") BigInteger price);
-    //List<Products> findTopByAmount(@Param("ProductAmount") BigInteger amount);
-    //List<Products> findByPriceLessThan(@Param("ProductPrice") BigInteger price);
-    //List<Products> findByPriceBefore(@Param("ProductPriceBefore") BigInteger price);
+
 }
